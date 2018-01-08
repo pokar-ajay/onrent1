@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk16"
+    tools:context="com.palma.myapplication.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        app:srcCompat="@drawable/rentlogo" />
+
+    <TextView
+        android:id="@+id/tvlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="On-Rent"
+        android:textColor="#fff"
+        android:textSize="40dp"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/tvlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvlogo"
+        android:layout_below="@+id/tvlogo"
+        android:layout_marginTop="38dp"
+        android:gravity="center"
+        android:text="Log In"
+        android:textColor="#97158a"
+        android:textSize="40dp"
+        android:textStyle="italic" />
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="280dp"
+        android:layout_height="65dp"
+        android:layout_alignEnd="@+id/register"
+        android:layout_below="@+id/tvlogin"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="43dp"
+        android:hint="Email" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/email"
+        android:layout_marginEnd="9dp"
+        android:layout_toStartOf="@+id/email"
+        app:srcCompat="@drawable/email" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="280dp"
+        android:layout_height="65dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tvlogin"
+        android:layout_marginEnd="56dp"
+        android:layout_marginTop="158dp"
+        android:hint="Password" />
+
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton2"
+        android:layout_marginTop="16dp"
+        android:layout_toEndOf="@+id/imageButton2"
+        android:text="Register here..."
+        android:textColor="#0f21e6"
+        android:textSize="10pt"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView5"
+        android:layout_alignTop="@+id/password"
+        app:srcCompat="@drawable/password" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvlogin"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/key" />
+
+
+</RelativeLayout>
